@@ -1,0 +1,225 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img2{
+    height:120px;
+    width:120px;
+}
+
+h1{
+    color:rgb(16, 16, 121);
+    margin: 5px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}
+h2{
+    color:rgb(97, 36, 133);
+    font-family: 'Patrick Hand', cursive;
+    margin: 5px;
+    font-size: 25px;
+    opacity: 70%;
+}
+h3{
+    color: rgb(19, 19, 17);
+    text-decoration: none;
+    font-family: 'Patrick Hand', cursive;
+}
+
+body{
+    height: 100vh;
+    overflow: auto;
+    background-image: linear-gradient(315deg, #f5eae5 0%, #ec9f05 74%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 1fr 2fr 0.2fr ;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "caja2 caja caja1"
+    "footer footer footer";
+}
+
+header{
+    text-align: center;
+    height: max-content;
+    grid-area: header;
+}
+nav{
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: max-content;
+    grid-area: nav;
+}
+
+.menu{
+    text-decoration: none;
+    height: max-content;
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline-block;
+    background-color: #ec9f05;
+    width: 120px;
+    opacity: .7;
+    text-align: center;
+    margin:auto;
+}
+
+.menu li:hover{
+    color: rgb(12, 12, 12);
+    background-color: rgb(226, 189, 110);
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.menu li a:hover{
+    color: rgb(163, 32, 9);
+}
+
+main{
+    text-align: center;
+    height: max-content;
+    grid-area: main;
+    overflow:auto;
+    padding: 1px 30px;
+}
+.parrafo1{
+    color: rgb(19, 19, 17);
+    font-family: 'Patrick Hand', cursive;
+    height: max-content;
+    font-style: normal;
+    font-size: large;
+    padding: 10px 70px;
+}
+.parrafo2{
+    color: rgb(238, 234, 231);
+    background-color: rgb(12, 12, 12) ;
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+}
+.caja{
+    font-family: 'Patrick Hand', cursive;
+    width:max-content;
+    height:max-content;
+    padding: 5px;
+    grid-area: caja;
+}
+
+.caja1{
+    width: 90%;
+    font-family: 'Patrick Hand', cursive;
+    height: max-content;
+    padding: 5px;
+    grid-area: caja1;
+}
+.caja2{
+    width: 90%;
+    font-family: 'Patrick Hand', cursive;
+    padding: 5px;
+    grid-area: caja2;
+}
+
+.img{
+    width: 50px;
+    height: 50px;
+}
+.img3{
+    width: 48%;
+    display: inline-block;
+    max-width:80px;
+    height: 130px;
+}
+
+video {
+    width:100%;
+    max-width:400px;
+}
+table{
+    font-family: 'Amatic SC', cursive;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+fieldset{
+margin: 3x;
+padding: 5px;
+width: 450px;
+text-align:center;
+}
+
+legend{
+margin: 3px;
+padding: 5px;
+font-family: 'Amatic SC', cursive;
+text-align: center;
+}
+
+form{
+    font-family: 'Amatic SC', cursive;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+footer{
+    text-align: left;
+    grid-area: footer;
+}
+
+@media only screen and (max-width:800px){
+    
+    body{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 0.3fr 0.1fr 1fr 1fr 1fr 20px;
+    grid-template-areas:    
+    "header header"
+    "nav nav"
+    "main main"
+    "caja caja1"
+    "caja2 caja2"
+    "footer footer";
+}
+.parrafo1{
+    padding: 10px 5px;
+}
+nav{
+    width: max-content;
+}
+}
+@media only screen and (max-width:480px){
+        body{
+    grid-template-columns:120px 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 20px;
+    grid-template-areas:    
+    "header header"
+    "nav main"
+    "nav caja"
+    "nav caja1"
+    "nav caja2"
+    "footer footer";
+}
+.parrafo1{
+    padding: 1px;
+}
+nav{
+    width: 220px;
+    padding:0px;
+}
+}
