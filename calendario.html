@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"   />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="estilo.css">
     <title>Calendario ⚜</title>
 </head>
@@ -17,142 +18,151 @@
         <h1 class=" wow animate__animated animate__bounce"> BIENVENIDOS AL DISTRITO 2 de la ZONA 28 - MENDOZA </h1>
             <h2>CALENDARIO DISTRITAL</h2>
     </header>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html"  >Inicio</a></li>
-            <li><a href="nosotros.html"  >Nosotros</a></li>
-            <li><a href="grupos.html"  >Grupos Scouts</a></li>
-            <li><a href="novedades.html" >Novedades</a></li>
-            <li><a href="contactos.html"  >Contactos</a></li>
-        </ul>
-    </nav>  
-    <main>
-        <h3>
-            <p class="parrafo1">
-            Fechas de Actividades Anuales presentadas por Grupos, Distrito y Zona 28.
-            </p>
-        </h3> 
-    </main> 
-    <div class="caja">  
-        <table >
-        <tr>
-            <th>Fecha</th> 
-            <th>Hora</th>   
-            <th>Lugar</th>  
-            <th>Actividad</th>   
-            <th>Contacto</th>
-        </tr>
-        <tr>
-            <td>02/03/2022</td>  
-            <td>16:00</td>   
-            <td>Fiesta de la Cosecha</td> 
-            <td>Aeropuerto</td>   
-            <td>Rosa Uño</td>                  
-        </tr>
-        <tr>
-            <td>05/03/2022</td>   
-            <td>16:00</td>   
-            <td>Fiesta Nacional de la Vendimia</td>   
-            <td>Anfiteatro FRan Romero Day</td>     
-            <td>Roxana </td>               
-        </tr>
-        <tr>
-            <td>12/03/2022</td>   
-            <td>9:00</td>   
-            <td>CAMES</td>   
-            <td>Polideportivo Lavalle</td>     
-            <td>Clara Pereira </td>               
-        </tr>
-        <tr>
-            <td>30/04/2022</td>   
-            <td>7:00</td>   
-            <td>Ascenso Cerro Penny</td>   
-            <td>Puesto El Manzanito</td>     
-            <td>Clara Pereira </td>               
-        </tr>
-        <tr>
-            <td>30/04/2022</td>   
-            <td>24:00</td>   
-            <td>Entrega Planes de Grupo</td>   
-            <td>Vía mail</td>     
-            <td>Diego González </td>  
-        </tr> 
-        <tr>
-            <td>07/05/2022</td>   
-            <td>15:00</td>   
-            <td>Aniversario Grupo Scout</td> 
-            <td>Grupo Henry Dunant</td>   
-            <td>Juan Carlos López</td> 
-        </tr>  
-        <tr>
-            <td>14/05/2022</td>   
-            <td>10:00</td>   
-            <td>Apertura Distrital</td>   
-            <td>Predio de la Virgen</td>     
-            <td>Diego González</td>               
-        </tr>
-        <tr>
-            <td>28/05/2022</td>   
-            <td>Vrtual</td>   
-            <td>Capacitación para Adquirir Der. Asociativos</td>   
-            <td>Classroom</td>     
-            <td>Diego González</td>               
-        </tr>
-        <tr>
-            <td>01/06/2022</td>   
-            <td>Virtual</td>   
-            <td>Inicio INDABAS</td>   
-            <td>Vía Establecida</td>     
-            <td>Esteban Herrero</td>               
-        </tr>
-        <tr>
-            <td>03/06/2022</td>   
-            <td>10:00</td>   
-            <td>Bienvenida Iniciales</td>   
-            <td>A definir</td>     
-            <td>Valeria Migueles</td>                   
-        </tr>
-        <tr>
-            <td>27-28/08/2022</td>   
-            <td>08:00</td>   
-            <td>CA.DI.JU.</td>   
-            <td>A definir</td>     
-            <td>Cati Carrión</td>  
-        </tr>     
-        <tr>
-            <td>07-10/10/2022</td>   
-            <td>09:00</td>   
-            <td>Jamboree Zonal</td>   
-            <td>A definir</td>     
-            <td>Clara Pereira</td>                   
-        </tr>
-        <tr>
-            <td>22/10/2022</td>   
-            <td>09:00</td>   
-            <td>Asamblea Distrital</td>   
-            <td>A definir</td>     
-            <td>Diego González</td>                   
-        </tr>
-        <tr>
-            <td>Enero/2023</td>   
-            <td>09:00</td>   
-            <td>Caminata Cristo Redentor</td>   
-            <td>Alta Montaña</td>     
-            <td>Clara Pereira</td>                   
-        </tr>
-        </table> 
-    </div>  
-    <div class="caja1"> </div>
-    <div class="caja2"></div>
-
-<footer>
+    
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">PRINCIPAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="novedades.html">Novedades</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="grupos.html">Grupos Scouts</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row">
+            <div class="col-12 p-3 bg-warning">
+                <p class="lead"> Actividades Anuales presentadas por Grupos, Distrito y Zona 28.
+                </p> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 p-3 bg-warning">
+                <div class="caja p-3"> <h4>
+                <table class="table table-striped text-center  bg-white">
+                    <thead>
+                    <tr>
+                        
+                        <th scope="col">Orden</th>
+                        <th scope="col">Fecha</th> 
+                        <th scope="col">Hora</th>   
+                        <th scope="col">Lugar</th>  
+                        <th scope="col">Actividad</th>   
+                        <th scope="col">Contacto</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>02/03/2022</td>  
+                        <td>16:00</td>   
+                        <td>Fiesta de la Cosecha</td> 
+                        <td>Aeropuerto</td>   
+                        <td>Rosa Uño</td>                  
+                        </tr>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>05/03/2022</td>   
+                        <td>16:00</td>   
+                        <td>Fiesta Nacional de la Vendimia</td>   
+                        <td>Anfiteatro FRan Romero Day</td>     
+                        <td>Roxana </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>12/03/2022</td>   
+                        <td>9:00</td>   
+                        <td>CAMES</td>   
+                        <td>Polideportivo Lavalle</td>     
+                        <td>Clara Pereira </td>   
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>30/04/2022</td>   
+                        <td>7:00</td>   
+                        <td>Ascenso Cerro Penny</td>   
+                        <td>Puesto El Manzanito</td>     
+                        <td>Clara Pereira </td>               
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>30/04/2022</td>   
+                        <td>24:00</td>   
+                        <td>Entrega Planes de Grupo</td>   
+                        <td>Vía mail</td>     
+                        <td>Diego González </td>  
+                    </tr> 
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>07/05/2022</td>   
+                        <td>15:00</td>   
+                        <td>Aniversario Grupo Scout</td> 
+                        <td>Grupo Henry Dunant</td>   
+                        <td>Juan Carlos López</td> 
+                    </tr> 
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>14/05/2022</td>   
+                        <td>10:00</td>   
+                        <td>Apertura Distrital</td>   
+                        <td>Predio de la Virgen</td>     
+                        <td>Diego González</td>               
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>28/05/2022</td>   
+                        <td>Vrtual</td>   
+                        <td>Capacitación para Adquirir Der. Asociativos</td>   
+                        <td>Classroom</td>     
+                        <td>Diego González</td>               
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>01/06/2022</td>   
+                        <td>Virtual</td>   
+                        <td>Inicio INDABAS</td>   
+                        <td>Vía Establecida</td>     
+                        <td>Esteban Herrero</td>               
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td>03/06/2022</td>   
+                        <td>10:00</td>   
+                        <td>Bienvenida Iniciales</td>   
+                        <td>A definir</td>     
+                        <td>Valeria Migueles</td>                   
+                    </tr>
+                    </tbody>
+                </table>  
+            </h4>
+            </div>  
+        </div>
+    </div>
+</main>
+<footer class="p-3 bg-black">
     <h4>
         ⚜  ZONA 28  DE SCOUTS DE ARGENTINA 
     </h4>  
 </footer> 
 <script src="js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
+<script> new WOW().init();   </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init();  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
