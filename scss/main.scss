@@ -1,0 +1,192 @@
+    $fondo:#ec9f05;
+    $colorn: rgb(19, 19, 17);
+    $letra1:'Amatic SC', cursive;
+    $letra2:'Patrick Hand', cursive;
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 100vh;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.2fr 1fr 2fr 0.2fr ;
+        grid-template-areas: "header header header""nav nav nav""main main main""caja2 caja caja1""footer footer footer";
+
+        header{
+            background-image: linear-gradient(315deg, #f5eae5 0%, #ec9f05 74%);
+            text-align: center;
+            height: max-content;
+            grid-area: header;
+
+            .img2{ 
+                height:120px;
+                width:120px;
+            }
+
+            h1{color:rgb(16, 16, 121);
+                margin: 5px;
+                font-family:$letra1;
+                font-size: 35px;
+                text-align: center;
+            }
+
+            h2{
+                color:rgb(97, 36, 133);
+                font-family:$letra2;
+                margin: 5px;
+                font-size: 25px;
+                opacity: 70%;   
+            }
+        }
+
+        nav{padding: 5px 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            height: max-content;
+            grid-area: nav;
+
+            ul{
+                .menu{
+                    text-decoration: none;
+                    height: max-content;
+                    list-style-type: none;
+
+                    li{ 
+                        display: inline-block;
+                        background-color: $fondo;
+                        width: 120px;
+                        opacity: .7;
+                        text-align: center;
+                        margin:auto;
+                        &:hover{
+                            color: $colorn;
+                            background-color: rgb(226, 189, 110);
+                        }
+
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            color: $colorn;
+                            font-family: 'Patrick Hand', cursive;
+                            font-size: 20px;
+                            margin: 5px;
+
+                            &:hover{
+                                color: rgb(163, 32, 9);
+                            }
+                        }
+                    }
+
+                }
+            } 
+          }
+
+    .container{
+        text-align: center;
+        height: max-content;
+        grid-area: main;
+        overflow:auto;
+        padding: 1px 30px;
+
+        h3{
+            color: $colorn;
+            text-decoration: none;
+            font-family:$letra2;
+        }
+
+        .parrafo1{
+            color: $colorn;
+            font-family:$letra2;
+            height: max-content;
+            font-style: normal;
+            font-size: large;
+            padding: 10px 70px;
+        }
+            
+        .caja{
+            font-family: $letra2;
+            width:max-content;
+            height:max-content;
+            padding: 5px;
+            grid-area:caja;
+                        
+        }
+        .caja1{
+            width: 100%;
+            font-family: $letra2;
+            height: max-content;
+            padding: 5px;
+            grid-area:caja1;
+        }
+        .img{
+        display:inline-block;
+        width: 18%;
+        max-width:80px;
+        height: 130px;
+        }
+        
+        .caja2{
+            width: 90%;
+            font-family: $letra2;
+            padding: 5px;
+            grid-area:caja2;
+            text-align: center;
+        }
+        .img3{
+            width: 48%;
+            display: inline-block;
+            max-width:80px;
+            height: 130px;
+        }
+        video {
+            width:100%;
+            max-width:400px;
+        }
+
+        table{
+            font-family:$letra1;
+            margin: 3px;
+            padding: 5px;
+            text-align: center;
+            font-size: large;
+        }
+        
+        fieldset{
+            margin: 3x;
+            padding: 5px;
+            width: 450px;
+            text-align:center;
+        }
+        
+        legend{
+            margin: 3px;
+            padding: 5px;
+            font-family:$letra1;
+            text-align: center;
+        }
+    
+        form{
+            font-family: $letra1;
+            margin: 3px;
+            padding: 5px;
+            text-align: center;
+        }
+
+    }
+    footer{
+        text-align: left;
+        grid-area:footer;
+        h4{
+            font-size: medium;
+            color:$fondo;
+        }
+        
+    }    
+}

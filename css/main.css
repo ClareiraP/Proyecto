@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.2fr 1fr 2fr 0.2fr;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "caja2 caja caja1" "footer footer footer"; }
+  body header {
+    background-image: linear-gradient(315deg, #f5eae5 0%, #ec9f05 74%);
+    text-align: center;
+    height: max-content;
+    grid-area: header; }
+    body header .img2 {
+      height: 120px;
+      width: 120px; }
+    body header h1 {
+      color: #101079;
+      margin: 5px;
+      font-family: "Amatic SC", cursive;
+      font-size: 35px;
+      text-align: center; }
+    body header h2 {
+      color: #612485;
+      font-family: "Patrick Hand", cursive;
+      margin: 5px;
+      font-size: 25px;
+      opacity: 70%; }
+  body nav {
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: max-content;
+    grid-area: nav; }
+    body nav ul .menu {
+      text-decoration: none;
+      height: max-content;
+      list-style-type: none; }
+      body nav ul .menu li {
+        display: inline-block;
+        background-color: #ec9f05;
+        width: 120px;
+        opacity: .7;
+        text-align: center;
+        margin: auto; }
+        body nav ul .menu li:hover {
+          color: #131311;
+          background-color: #e2bd6e; }
+        body nav ul .menu li a {
+          display: inline-block;
+          text-decoration: none;
+          color: #131311;
+          font-family: 'Patrick Hand', cursive;
+          font-size: 20px;
+          margin: 5px; }
+          body nav ul .menu li a:hover {
+            color: #a32009; }
+  body .container {
+    text-align: center;
+    height: max-content;
+    grid-area: main;
+    overflow: auto;
+    padding: 1px 30px; }
+    body .container h3 {
+      color: #131311;
+      text-decoration: none;
+      font-family: "Patrick Hand", cursive; }
+    body .container .parrafo1 {
+      color: #131311;
+      font-family: "Patrick Hand", cursive;
+      height: max-content;
+      font-style: normal;
+      font-size: large;
+      padding: 10px 70px; }
+    body .container .caja {
+      font-family: "Patrick Hand", cursive;
+      width: max-content;
+      height: max-content;
+      padding: 5px;
+      grid-area: caja; }
+    body .container .caja1 {
+      width: 100%;
+      font-family: "Patrick Hand", cursive;
+      height: max-content;
+      padding: 5px;
+      grid-area: caja1; }
+    body .container .img {
+      display: inline-block;
+      width: 18%;
+      max-width: 80px;
+      height: 130px; }
+    body .container .caja2 {
+      width: 90%;
+      font-family: "Patrick Hand", cursive;
+      padding: 5px;
+      grid-area: caja2;
+      text-align: center; }
+    body .container .img3 {
+      width: 48%;
+      display: inline-block;
+      max-width: 80px;
+      height: 130px; }
+    body .container video {
+      width: 100%;
+      max-width: 400px; }
+    body .container table {
+      font-family: "Amatic SC", cursive;
+      margin: 3px;
+      padding: 5px;
+      text-align: center;
+      font-size: large; }
+    body .container fieldset {
+      margin: 3x;
+      padding: 5px;
+      width: 450px;
+      text-align: center; }
+    body .container legend {
+      margin: 3px;
+      padding: 5px;
+      font-family: "Amatic SC", cursive;
+      text-align: center; }
+    body .container form {
+      font-family: "Amatic SC", cursive;
+      margin: 3px;
+      padding: 5px;
+      text-align: center; }
+  body footer {
+    text-align: left;
+    grid-area: footer; }
+    body footer h4 {
+      font-size: medium;
+      color: #ec9f05; }
