@@ -1,0 +1,43 @@
+nav{padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: max-content;
+    grid-area: nav;
+
+    ul{
+        .menu{
+            text-decoration: none;
+            height: max-content;
+            list-style-type: none;
+
+            li{ 
+                display: inline-block;
+                background-color: $fondo;
+                width: 120px;
+                opacity: .7;
+                text-align: center;
+                margin:auto;
+                &:hover{
+                    color: $colorn;
+                    background-color:$menu;
+                }
+
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $colorn;
+                    font-family:$letra2;
+                    font-size: 20px;
+                    margin: 5px;
+
+                    &:hover{
+                        color: $mouse
+                    }
+                }
+            }
+
+        }
+    } 
+}

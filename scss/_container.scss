@@ -1,0 +1,96 @@
+.container{
+    text-align: center;
+    height: 100%;
+    grid-area: main;
+    padding: 1px 30px;
+
+    h3{
+        color: $colorn;
+        text-decoration: none;
+        font-family:$letra2;
+    }
+
+    .parrafo1{
+        color: $colorn;
+        font-family:$letra2;
+        height: max-content;
+        font-style: normal;
+        font-size: large;
+        padding: 10px 70px;
+    }
+        
+    .caja{
+        font-family: $letra2;
+        width:max-content;
+        height:max-content;
+        padding: 5px;
+        text-align: center;
+        grid-area:caja;
+                    
+    }
+    .caja1{
+        width: 100%;
+        font-family: $letra2;
+        height: max-content;
+        padding: 5px;
+        grid-area:caja1;
+    }
+    .img{
+    display:inline-block;
+    width: 18%;
+    max-width:80px;
+    height: 80px;
+    }
+    .img1{ 
+    width:80px;
+    }
+    .caja2{
+        width: 90%;
+        font-family: $letra2;
+        padding: 5px;
+        grid-area:caja2;
+        text-align: center;
+    }
+    .img3{
+        width: 48%;
+        display: inline-block;
+        width:80px;
+        height: 130px;
+    }
+    video {
+        width:100%;
+        max-width:400px;
+    }
+
+    table{
+        text-align: start;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-family:$letra;
+        padding: 1px;
+        text-align: center;
+    }
+    
+    fieldset{
+        margin: 3x;
+        padding: 5px;
+        width: 450px;
+        text-align:left;
+    }
+    
+    legend{
+        margin: 3px;
+        padding: 5px;
+        font-family:$letra1;
+        text-align: left;
+    }
+
+    form{
+        font-family: $letra1;
+        margin: 3px;
+        padding: 5px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,13 @@
+footer{
+    text-align: left;
+    grid-area:footer;
+    h4{
+        font-size:small;
+        color:$fondo;
+    }
+    .logo{
+        width: 30%;
+        display: inline-block;
+    }
+
+}    
