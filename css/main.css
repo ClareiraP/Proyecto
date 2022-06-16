@@ -126,13 +126,13 @@ nav {
     text-align: center; }
 
 footer {
-  text-align: left;
+  text-align: center;
   grid-area: footer; }
   footer h4 {
     font-size: small;
     color: #ec9f05; }
   footer .logo {
-    width: 30%;
+    width: 5%;
     display: inline-block; }
 
 * {
