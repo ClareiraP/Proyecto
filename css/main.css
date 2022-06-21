@@ -99,8 +99,9 @@ nav {
     width: 80px;
     height: 130px; }
   .container video {
-    width: 100%;
-    max-width: 400px; }
+    width: 70%;
+    max-width: 400px;
+    text-justify: auto; }
   .container table {
     text-align: start;
     display: block;
